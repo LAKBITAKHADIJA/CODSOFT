@@ -85,11 +85,6 @@ class TodoApp:
 
             Button(self.edit_windows, text="Save", command=lambda: self.save_task(selected_task)).pack(pady=10)
 
-
-
-
-
-
     def remove_task(self):
         self.tasks = [task for task in self.tasks if not task ['complete']]
         self.update_task_list()
